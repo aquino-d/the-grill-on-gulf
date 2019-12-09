@@ -5,51 +5,56 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>GoFish Seafood Restaurant</title>
+    <title>Contact - The Grille on Gulf - Seafood Restaurant</title>
     <meta name="description" content="GoFish Seafood Restaurant">
     <meta name="author" content="SitePoint">
-
+    
+    <!-- Font Awesome - Icons - Kit Code   -->
+    <script src="https://kit.fontawesome.com/26bc0589b0.js" crossorigin="anonymous"></script>
+    
+    <!-- StyleSheet   -->
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
     <div class="wrapper">
-        <nav>
-            <ul>
-                <li><a href="index.html">Menu</a></li>
-                <li><a href="specials.html">Specials</a></li>
-                <li><a href="photos.html">Photos</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="img/LOGO.png" alt="The Grille on Gulf logo">
+            </a>
+            <ul class="nav-links">
+                <li class="nav-item"><a id="button" href="menu.html"><button class="button"><span>Menu</span></button></a></li>                
+                <li class="nav-item"><a id="button" href="specials.html"><button class="button"><span>Specials</span></button></a></li>                
+                <li class="nav-item"><a id="button" href="photos.html"><button class="button"><span>Photos </span></button></a></li>                
+                <li class="nav-item"><a id="button" href="contact.html"><button class="button"><span>Contact </span></button></a></li>
+                
             </ul>
         </nav>
             
         <header>
-            <h1>GoFish Seafood Restaurant</h1>
+            <h1>The Grille on Gulf - Seafood Restaurant</h1>
         </header>
         
         <main>
             <div class="flex-container">
-<!--                <div class="section-1">-->
-                    <div class="section-image-1">
-
-                    </div> 
+                <div class="section-1 flex-container">
+                    <div class="section-image-1"></div> 
 
                     <div class="section-text">
                         <h2>HEADING 2</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                     </div>
-<!--                </div>-->
+                </div>
 
-<!--                <div class="section-2">-->
+                <div class="section-2 flex-container">
                     <div class="section-text">
                         <h2>HEADING 2</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                     </div>
-                    <div class="section-image-2">
+                    
+                    <div class="section-image-2"></div> 
 
-                    </div> 
-
-<!--                </div>-->
+                </div>
             </div>
             
             <div class="section-3">
@@ -61,7 +66,7 @@
                 
                 <div class="section-card-wrap">
                     <div class="section-card">
-                        <img src="https://picsum.photos/300/200"> 
+                        <img src="https://picsum.photos/300/200">
                         <h3>Lorem ipsum</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                     </div>
@@ -118,9 +123,68 @@
         </main>
         
         <footer>
-            Copyright &copy; 2019 GoFish Seafood Restaurant<br>
-            <a href="mailtodanielaquino.com">daniel@aquino.com</a>
+            <ul class="footer-nav-links"> 
+              <li class="flex-item"><a href="#"><h3>Contact</h3></a></li>
+              <li class="flex-item"><a href="#"><h3>Careers</h3></a></li>
+              <li class="flex-item"><a href="#"><h3>Gift Cards</h3></a></li>
+            </ul>            
+            
+            <ul class="flex-footer"> 
+                <li class="flex-item">
+                    <h4>ABOUT</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#">Curriculum</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Sign in</a></li>
+                    </ul>
+                </li>
+                <li class="flex-item">
+                    <h4>CONNECT WITH US</h4>
+                    <ul class="footer-nav-links">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                    
+                </li>
+                <li class="flex-item">
+                    <h4>DOWNLOAD OUR APP</h4>
+                    <ul class="footer-nav-links">
+                        <li><a href="#"><img src="img/download-app.svg" alt="Download on the App store"></a></li>
+                        <li><a class="android-anchor" href="#"><img src="img/en_badge_web_generic.png" alt="Download on the App store" class="android"></a></li>
+                    </ul>
+                
+                </li>
+            </ul>
+            
+            <ul class="footer-nav-links space-between">
+                <li class="flex-item"><span>Copyright &copy; 2019 The Grille on Gulf - Seafood Restaurant</span></li>
+            </ul>
         </footer>
+        
     </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

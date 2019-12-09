@@ -1,3 +1,4 @@
+/**************************** PAGE SETTING ******************************/
 * {
     box-sizing: border-box;
 }
@@ -9,7 +10,103 @@ body, html {
 body {
     color: #28635e;
     font-family: Verdana, Arial, sans-serif;
+    background-image: url(img/bigshiplap.jpg);
+    background-attachment: fixed;
+/*    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);;*/
+/*background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
+
+.wrapper {
+    width: 1200px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+main {
+    margin: 10% 0% 5% 0%;
+}
+
+
+
+/**************************** TOP-NAV & Footer NAV ******************************/
+
+/**************************** TOP-NAV ******************************/
+nav {
+  width: 100%;
+  background-color: transparent;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo img {
+    height: 90px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+}
+
+.nav-item:hover a {
+  color: darkgreen;
+}
+
+/**************************** FOOTER-NAV ******************************/
+.footer-nav {
+    list-style: none;
+    padding: 0px;
+    text-align: left;
+}
+
+.footer-nav a {
+    display: inline-block;
+    margin-bottom: 1.33em;
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+}
+
+.footer-nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+}
+
+.footer-nav-links a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+
+
+
+/**************************** HEADER ******************************/
 
 header {
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero-img.jpg);
@@ -19,43 +116,7 @@ header {
     height: 600px;
 }
 
-nav {
-    font-weight: bold;
-    padding: 0px;
-}
-
-nav a {
-    color: #363636;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    font-weight: bold;
-}
-
-nav a:link {
-    color: #363636;
-}
-
-nav a:visited {
-    color: ##363636;
-}
-
-nav a:hover {
-    color: #28635e;
-}
-
-ul {
-    list-style: none;
-    text-align: center;
-}
-
-li {
-    display: inline;
-}
-
-a {
-    margin: 10px 15px;
-}
+/**************************** TEXT HEADERS ******************************/
 
 h1 {
   text-align: center;
@@ -66,17 +127,102 @@ h1 {
   color: white;
 }
 
+h4 {
+    text-align: left;
+}
+
+
+
+/**************************** FLEX-BOX ******************************/
+
 .flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
+.flex-footer {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.flex-item {
+    padding: 5px;
+    margin: 5px;
+    margin-right: 10%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.space-between { 
+    justify-content: space-between; 
+}  
+
+
+
+
+/**************************** BUTTONS ******************************/
+#button {
+    padding: 0px;
+    margin-left: 15px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 5px;
+  width: 125px;
+  transition: all 0.5s;
+  cursor: pointer;
+/*  margin: 5px;*/
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: relative;
+  opacity: 0;
+  top: 0;
+ 
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/**************************** SECTIONS ******************************/
+
+/*Section 1 and 2 text*/
+.section-text {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+/**************************** Section - 1 ******************************/
 .section-1 {
     height: 600px;
-    background-color: #fff;
 }
 
 .section-image-1 {
@@ -91,14 +237,11 @@ h1 {
 /*    float: left;*/
 }
 
+/**************************** Section - 2 ******************************/
 .section-2 {
     height: 600px;
-    background-color: #ffffff;
-}
+    margin: 0% 0% 10% 0%;
 
-.section-text {
-    width: 50%;
-    text-align: center;
 }
 
 .section-image-2 {
@@ -113,9 +256,10 @@ h1 {
 /*    float: right;*/
 }
 
+/**************************** Section - 3 ******************************/
 .section-3 {
     height: 600px;
-    background-color: #ffffff;
+    margin: 0% 0% 10% 0%;
 }
 
 .section-text-3 {
@@ -128,15 +272,18 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .section-card {
     width: 300px;
+/*
     margin-right: auto;
     margin-left: auto;
+*/
 }
 
+/**************************** Section - 4 ******************************/
 .section-4 {
     margin-right: auto;
     margin-left: auto;
@@ -148,11 +295,50 @@ h1 {
 .gallery {
     margin: 0;
 }
-
+/**************************** FOOTER ******************************/
 footer {
-    background-color: #363636;
-    font-size: .60em;
+    border: 1px solid grey;
     font-style: italic;
     text-align: center;
     padding: 1em;
 }
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fab {
+    font-size: 2rem;
+}
+
+.android-anchor img {
+    width: 150px; 
+}
+
+.android {
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
