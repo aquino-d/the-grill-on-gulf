@@ -161,6 +161,13 @@ h4 {
     justify-content: space-between; 
 }  
 
+/**************************** Clearfix ******************************/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 
 
 
@@ -220,32 +227,16 @@ h4 {
     padding: 0px 50px;
 }
 
-/**************************** Section - 1 ******************************/
-.section-1 {
+/**************************** Section Tile ******************************/
+.tile-section {
     height: 600px;
 }
 
-.section-image-1 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/section-image-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    height: 600px;
-    width: 50%;
-    margin: 0;
-    padding: 0;
-/*    float: left;*/
-}
-
-/**************************** Section - 2 ******************************/
-.section-2 {
-    height: 600px;
+.tile-mb {
     margin: 0% 0% 10% 0%;
-
 }
 
-.section-image-2 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/section-image-2.jpg);
+.tile-image {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -253,13 +244,36 @@ h4 {
     width: 50%;
     margin: 0;
     padding: 0;
-/*    float: right;*/
+}
+
+.tile-image-1 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/section-image-1.jpg);
+}
+
+.tile-image-2 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/calms.jpg);
+}
+
+.tile-image-3 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/oyster-dish.jpg);
+}
+
+.tile-image-4 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/fish-rice.jpg);
+    background-position: center;
 }
 
 /**************************** Section - 3 ******************************/
 .section-3 {
     height: 600px;
-    margin: 0% 0% 10% 0%;
+    margin: 0% 0% 50% 0%;
+
+}
+
+.section-3-index {
+    height: 600px;
+    margin: 0% 0% 30% 0%;
+
 }
 
 .section-text-3 {
@@ -271,8 +285,10 @@ h4 {
 .section-card-wrap {
     display: flex;
     flex-wrap: wrap;
+flex-flow: row wrap; 
     align-items: center;
     justify-content: space-between;
+    max-width: 
 }
 
 .section-card {
@@ -295,6 +311,74 @@ h4 {
 .gallery {
     margin: 0;
 }
+
+/**************************** FORM ******************************/
+.form-text {
+    width: 450px;
+    margin: 0 auto;
+}
+
+
+form {
+  /* Center the form on the page */
+  width: 400px;
+    margin: 0 auto;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, 
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus, 
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: .5em;
+}
+
+
 /**************************** FOOTER ******************************/
 footer {
     border: 1px solid grey;
